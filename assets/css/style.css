@@ -20,9 +20,14 @@ h1 {
     color: #1a1a1a;
 }
 
-#logo {
+.logo {
     float: left;
     font-size: 300%;
+    margin-left: 10px;
+}
+
+#logo-image {
+    margin-top: 3px;
 }
 
 /* navigation links */
@@ -33,7 +38,7 @@ h1 {
     float: right;
 }
 
-#menu, #logo {
+#menu, .logo {
     line-height: 75px;
 }
 
