@@ -23,7 +23,7 @@ h1 {
 .logo {
     float: left;
     font-size: 300%;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 #logo-image {
@@ -44,7 +44,7 @@ h1 {
 
 #menu li {
     list-style-type: none;
-    margin-right: 30px;
+    margin-right: 15px;
     display: inline;
 }
 
