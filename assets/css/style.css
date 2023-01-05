@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&family=Montserrat:wght@300&display=swap');
 
 * {
     margin: 0;
@@ -9,4 +9,18 @@
 body {
     font-family: Montserrat, Arial, sans-serif;
     font-weight: 300;
+    color: #333333;
+}
+
+/* headings and logo */
+
+h1, h2 {
+    font-family: Josefin Slab, Times, serif;
+    letter-spacing: 2px;
+    color: #1a1a1a;
+}
+
+#logo {
+    float: left;
+    font-size: 300%;
 }
