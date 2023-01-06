@@ -178,6 +178,26 @@ h1 {
 }
 
   .recipe-links h3:hover {
-    color: #d1f9ff;
+    color: #dff9fd;
     text-shadow: 0 0 0.6rem #ffffff;
   }
+
+  #footer-links {
+    text-align: center;
+    margin-left: 150px;
+  }
+
+  #footer-links a {
+    color: #333333;
+    font-size: 175%;
+    letter-spacing: 130px;
+  }
+
+ .social-links {
+    display: inline-block;
+    padding: 30px;
+}
+
+.social-links i:hover {
+    color: #a2c4c9;
+}
