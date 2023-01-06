@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&family=Montserrat:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500;700&family=Montserrat:wght@300;600&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -103,7 +102,6 @@ h1 {
     font-family: Montserrat, Arial, sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
-    font-weight: bold;
     text-align: center;
 
     width: 300px;
@@ -132,3 +130,53 @@ h1 {
 
     position: absolute;
 }
+
+/* recipe links on homepage */
+
+#recipes {
+    text-align: center;
+}
+
+#pupcakes-div {
+    display: inline-block;
+    margin-right: 15px;
+    background-color: #3e3e3e;
+    padding-bottom: 30px;
+    box-shadow: none;
+}
+
+#pup-pops-div {
+    display: inline-block;
+    margin-left: 15px;
+    background-color: #3e3e3e;
+    padding-bottom: 30px;
+    box-shadow: none;
+}
+
+#dog-biscuits-div {
+    display: inline-block;
+    margin: 15px;
+    background-color: #3e3e3e;
+    padding-bottom: 30px;
+    box-shadow: none;
+}
+
+#recipes-section-heading {
+    text-align: center;
+    font-size: 250%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#recipes a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Josefin Slab, Times, serif;
+    font-size: 175%;
+    font-weight: 700;
+}
+
+  .recipe-links h3:hover {
+    color: #d1f9ff;
+    text-shadow: 0 0 0.6rem #ffffff;
+  }
