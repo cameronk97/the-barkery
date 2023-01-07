@@ -24,7 +24,7 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="#recipes-section-heading">Recipes</a>
+                    <a href="index.html#recipes">Recipes</a>
                 </li>
                 <li>
                     <a href="newsletter.html"  class="active">Newsletter</a>
@@ -35,8 +35,18 @@
 
     <!-- subscribe to our newsletter form -->
 
-    <section id="subscribe-form">
-        
+    <section id="form-section">
+            <form class="subscribe-form" method="POST" action="https://formdump.codeinstitute.net/">
+            <h2>Subscribe to our newsletter</h2>
+            <h3>to receive weekly recipes straight to your inbox!</h3>
+            <label for="fname">First Name</label>
+            <input id="fname" type="text" name="first_name" class="text-input" required>
+            <label for="lname">Last Name</label>
+            <input id="lname" type="text" name="last_name" class="text-input" required>
+            <label for="email">Email Address</label>
+            <input id="email" type="email" name="email_address" class="text-input" required>
+            <input type="submit" value="Subscribe" class="subscribe-button">
+            </form>
     </section>
 
     <footer>
