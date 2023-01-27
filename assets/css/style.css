@@ -9,7 +9,7 @@
 body {
     font-family: Montserrat, Arial, sans-serif;
     font-weight: 300;
-    color: #333333;
+    color: #2f2f2f;
 }
 
 /* headings and logo */
@@ -17,7 +17,7 @@ body {
 h1 {
     font-family: Josefin Slab, Times, serif;
     letter-spacing: 2px;
-    color: #1a1a1a;
+    color: #2f2f2f;
 }
 
 .logo {
@@ -26,8 +26,9 @@ h1 {
     margin-left: 15px;
 }
 
-#logo-image {
-    margin-top: 3px;
+#logo-icon {
+    color: #a2c4c9;
+    padding-left: 3px;
 }
 
 /* navigation links */
@@ -54,11 +55,11 @@ h1 {
 }
 
 #menu a:hover {
-    border-bottom: 1px solid #333333;
+    border-bottom: 1px solid #2f2f2f;
 }
 
 .active {
-    border-bottom: 1px solid #333333;
+    border-bottom: 1px solid #2f2f2f;
 }
 
 /* hero image */
@@ -92,7 +93,7 @@ h1 {
 }
 
 #about-cover-text {
-    background-color: rgba(162, 196, 201, .7);
+    background-color: rgba(162, 196, 201, .8);
 
     top: 30px;
     right: 30px;
@@ -101,7 +102,7 @@ h1 {
 }
 
 #scroll-cover-text {
-    background-color: rgba(162, 196, 201, .7);
+    background-color: rgba(162, 196, 201, .8);
 
     bottom: 30px;
     left: 30px;
@@ -172,12 +173,15 @@ h1 {
 #recipes a {
     text-decoration: none;
     color: #ffffff;
-    font-family: Josefin Slab, Times, serif;
+    font-family: Montserrat, Arial, sans-serif;
     font-size: 175%;
-    font-weight: 700;
 }
 
-  .recipe-links h3:hover {
+.recipe-links h3 {
+    padding-top: 15px;
+}
+
+.recipe-links h3:hover {
     color: #dff9fd;
     text-shadow: 0 0 0.6rem #ffffff;
   }
@@ -190,7 +194,7 @@ h1 {
   }
 
   #footer-links a {
-    color: #333333;
+    color: #2f2f2f;
     font-size: 175%;
     letter-spacing: 130px;
   }
@@ -245,9 +249,9 @@ h1 {
 .subscribe-button {
     display: block;
     padding: 15px 30px;
-    border: 1px solid #3e3e3e;
+    border: 1px solid #2f2f2f;
     border-radius: 2px;
-    background-color: #3e3e3e;
+    background-color: #2f2f2f;
     color: #ffffff;
     font-family: Montserrat, sans-serif;
     font-size: 100%;
@@ -264,12 +268,12 @@ h1 {
 }
 
 .text-input:hover {
-    border-color: #333333;
+    border-color: #2f2f2f;
     border-width: 2px;
 }
 
 .subscribe-button:hover {
-    color: #333333;
+    color: #2f2f2f;
     background-color: rgba(255, 255, 255, 0.4);
     border-width: 2px;
     font-weight: bold;
