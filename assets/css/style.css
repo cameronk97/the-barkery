@@ -14,39 +14,62 @@ body {
 
 /* headings and logo */
 
+a {
+    text-decoration: none;
+}
+
 h1 {
     font-family: Josefin Slab, Times, serif;
     letter-spacing: 2px;
     color: #2f2f2f;
+/*    padding-bottom: 20px; */
 }
 
 .logo {
-    float: left;
+/*    float: left; */
     font-size: 300%;
     margin-left: 15px;
 }
 
-#logo-icon {
-    color: #a2c4c9;
-    padding-left: 3px;
+/* navigation links */
+
+header {
+    display: flex;
+    height: 75px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* navigation links */
+h1 > i {
+    color: #a2c4c9;
+    align-self: flex-end;
+   padding-left: 5px;
+/*    margin-top: 15px; */
+}
 
 #menu {
     font-size: 110%;
     letter-spacing: 2px;
-    float: right;
+/*    align-self: flex-end; */
+/*    display: flex;
+    justify-content: end;
+    float: right; */
 }
 
 #menu, .logo {
-    line-height: 75px;
+    height: 100%;
+}
+
+header ul {
+    display: flex;
 }
 
 #menu li {
     list-style-type: none;
     margin-right: 15px;
-    display: inline;
+/*    justify-content: end; */
+/*    display: inline; */
 }
 
 #menu a {
@@ -188,15 +211,23 @@ h1 {
 
   /* footer */
 
+  footer {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
   #footer-links {
     text-align: center;
     margin-left: 150px;
   }
 
   #footer-links a {
+    align-self: center;
     color: #2f2f2f;
     font-size: 175%;
-    letter-spacing: 130px;
+    letter-spacing: 85px;
   }
 
  .social-links {
@@ -278,3 +309,4 @@ h1 {
     border-width: 2px;
     font-weight: bold;
 }
+
