@@ -22,11 +22,9 @@ h1 {
     font-family: Josefin Slab, Times, serif;
     letter-spacing: 2px;
     color: #2f2f2f;
-/*    padding-bottom: 20px; */
 }
 
 .logo {
-/*    float: left; */
     font-size: 300%;
     margin-left: 15px;
 }
@@ -44,17 +42,12 @@ header {
 h1 > i {
     color: #a2c4c9;
     align-self: flex-end;
-   padding-left: 5px;
-/*    margin-top: 15px; */
+    padding-left: 5px;
 }
 
 #menu {
     font-size: 110%;
     letter-spacing: 2px;
-/*    align-self: flex-end; */
-/*    display: flex;
-    justify-content: end;
-    float: right; */
 }
 
 #menu, .logo {
@@ -68,8 +61,6 @@ header ul {
 #menu li {
     list-style-type: none;
     margin-right: 15px;
-/*    justify-content: end; */
-/*    display: inline; */
 }
 
 #menu a {
@@ -139,7 +130,7 @@ header ul {
     background: url('../images/hero-image.jpg') no-repeat center center;
     overflow: hidden;
 
-    /* animates zoom effect on loading page */
+/* animates zoom effect on loading page */
     animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
@@ -285,9 +276,7 @@ header ul {
     background-color: #2f2f2f;
     color: #ffffff;
     font-family: Montserrat, sans-serif;
-    font-size: 100%;
-
-    
+    font-size: 100%;  
 }
 
 #form-section label, .text-input, .subscribe-button {
@@ -322,6 +311,7 @@ header ul {
 
 #recipe-image {
     max-height: auto;
+    max-width: 50%;
 }
 
 .recipe-info-text-container {
@@ -333,7 +323,6 @@ header ul {
 }
 
  .recipe-title {
-/*    align-self: center; */
     text-align: center;
     font-size: xx-large;
 }
@@ -349,19 +338,11 @@ header ul {
     justify-content: center;
     align-content: center;
     align-items: center;
- /*   width: 30%; */
- /*   background-color: rgba(162, 196, 201, .8); */
     width: 30%;
     height: 50%;
     padding: 5px;
     margin: 10px;
 }
-/*    border-radius: 5%;
-    border-style: double;
-    border-color: #a2c4c9;
-    border-width: 6px; */
-  /*  margin: 1% 15%; */
-    /*box-shadow: 1px 1px #2f2f2f; */
 
 #ingredients h3, #steps h3 {
     color: #a2c4c9;
@@ -377,31 +358,10 @@ header ul {
     list-style-type: none;
 }
 
-/* #ingredients li {
-    text-decoration: underline;
-} */
-
 hr {
     border: 1px solid #d1d1d1;
     margin: 10px 0;
 }
-
-h4 {
-    text-transform: uppercase;
-    margin-right: 10px;
-/*    display: flex; */
-/*    display: inline;
-    float: left; */
-}
-
-/* #steps hr {
-    width: 800%;
-} */
-
-/* #steps h4, #steps hr {
-    width: 75%;
-    align-self: flex-end;
-} */
 
 #steps {
     display: flex;
@@ -409,29 +369,18 @@ h4 {
     justify-content: center;
     align-content: center;
     align-items: center;
-/*    width: 60%; */
-/*    background-color: rgba(162, 196, 201, .8); */
     width: 60%;
     height: 50%;
     padding: 5px;
     margin: 5px;
-/*    border-radius: 5%;
-    border-style: double;
-    border-color: #a2c4c9;
-    border-width: 6px; */
-   /* margin: 1% 15%; */
 }
 
 .recipe-container {
     display: flex;
- /*   flex-direction: column; */
     width: 100%;
     justify-content: flex-start;
     align-content: center;
     align-items: center;
-    padding: 10px;
-/*    margin: 10px; */
-/*    padding: 5px; */
 }
 
  #steps ol {
@@ -441,7 +390,6 @@ h4 {
     padding-right: 15px;
     color: #2f2f2f;
     margin: 5px;
-/*    font-weight: bold; */
 }
 
 #steps li {
@@ -454,22 +402,3 @@ h4 {
 ol > li::marker {
     font-weight: bold;
   }
-
- /* .individual-recipe-steps {
-    display: flex;
-    max-width: 600px;
-    text-align: start;
-    border-bottom: 1px solid #d1d1d1;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: flex-start;
-    justify-content: space-between;
-} */
-
-/* .individual-recipe-steps p {
-    flex-wrap: wrap;
-    text-decoration: underline;
-    text-decoration-color: #d1d1d1;
-    margin: 10px 0;
-    margin-left: 10px;
-} */
