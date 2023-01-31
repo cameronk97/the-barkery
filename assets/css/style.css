@@ -87,11 +87,9 @@ header ul {
     position: relative;
 }
 
-.cover-text, .cover-text h2 {
-    color: #ffffff;
-}
-
 .cover-text {
+    color: #ffffff;
+    background-color: rgba(162, 196, 201, .8);
     font-size: 150%;
     font-family: Montserrat, Arial, sans-serif;
     letter-spacing: 2px;
@@ -108,20 +106,14 @@ header ul {
 }
 
 #about-cover-text {
-    background-color: rgba(162, 196, 201, .8);
-
     top: 30px;
     right: 30px;
-
     position: absolute;
 }
 
 #scroll-cover-text {
-    background-color: rgba(162, 196, 201, .8);
-
     bottom: 30px;
     left: 30px;
-
     position: absolute;
 }
 
@@ -154,28 +146,49 @@ header ul {
     text-align: center;
 }
 
-#pupcakes-div {
-    display: inline-block;
+#recipe-links-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+#pupcakes-link {
+    display: flex;
+    flex-direction: column;
+/*    width: 23%; */
+/*    display: inline-block; */
     margin-right: 15px;
     background-color: #3e3e3e;
     padding-bottom: 30px;
-    box-shadow: none;
+    border-radius: 5px;
+    box-shadow: 10px 10px 8px #888888;
 }
 
-#pup-pops-div {
-    display: inline-block;
+#pup-pops-link {
+    display: flex;
+    flex-direction: column;
+/*    width: 23%; */
+/*    display: inline-block; */
     margin-left: 15px;
     background-color: #3e3e3e;
     padding-bottom: 30px;
-    box-shadow: none;
+    border-radius: 5px;
+    box-shadow: 10px 10px 8px #888888;
 }
 
-#dog-biscuits-div {
-    display: inline-block;
+#dog-biscuits-link {
+    display: flex;
+    flex-direction: column;
+/*    width: 23%; */
+/*    display: inline-block; */
     margin: 15px;
     background-color: #3e3e3e;
     padding-bottom: 30px;
-    box-shadow: none;
+    border-radius: 5px;
+    box-shadow: 10px 10px 8px #888888;
 }
 
 #recipes h2 {
@@ -200,6 +213,11 @@ header ul {
     color: #dff9fd;
     text-shadow: 0 0 0.6rem #ffffff;
   }
+
+.recipe-images {
+    width: 334.45px;
+    width: 334.45px;
+}
 
   /* footer */
 
@@ -342,7 +360,7 @@ header ul {
     width: 30%;
     height: 50%;
     padding: 5px;
-    margin: 10px;
+    margin: 20px 10px;
 }
 
 #ingredients h3, #steps h3 {
@@ -373,7 +391,7 @@ hr {
     width: 60%;
     height: 50%;
     padding: 5px;
-    margin: 5px;
+    margin: 20px 10px;
 }
 
 .recipe {
@@ -402,4 +420,33 @@ hr {
 
 ol > li::marker {
     font-weight: bold;
-  }
+}
+
+/* Media queries */
+
+/* For larger to medium screen sizes from 1068px wide and down */
+@media screen and (max-width: 1068px) {
+    #hero-outer {
+        width: 100%
+    }
+
+     #hero-image {
+        width: 100%;
+        background-size: cover;
+        height: 660px;
+    } */
+
+    #recipe-links-container div:nth-child(3) {
+        display: block;
+    }
+}
+
+/* For medium to smaller screen sizes from 900px wide and down */
+@media screen and (max-width: 900px) {
+    
+}
+
+/* For small screen sizes from 700px wide and down */
+@media screen and (max-width: 700px) {
+    
+}
