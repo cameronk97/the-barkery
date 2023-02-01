@@ -158,8 +158,6 @@ header ul {
 #pupcakes-link {
     display: flex;
     flex-direction: column;
-/*    width: 23%; */
-/*    display: inline-block; */
     margin-right: 15px;
     background-color: #3e3e3e;
     padding-bottom: 30px;
@@ -170,8 +168,6 @@ header ul {
 #pup-pops-link {
     display: flex;
     flex-direction: column;
-/*    width: 23%; */
-/*    display: inline-block; */
     margin-left: 15px;
     background-color: #3e3e3e;
     padding-bottom: 30px;
@@ -182,8 +178,6 @@ header ul {
 #dog-biscuits-link {
     display: flex;
     flex-direction: column;
-/*    width: 23%; */
-/*    display: inline-block; */
     margin: 15px;
     background-color: #3e3e3e;
     padding-bottom: 30px;
@@ -221,15 +215,13 @@ header ul {
   /* footer */
 
   footer {
-    display: flex;
     height: 75px;
-    align-items: center;
-    justify-content: space-evenly;
+    margin: 0 auto;
   }
 
   #social-links {
     text-align: center;
-    margin-left: 150px;
+    margin-left: 105px;
   }
 
 #social-links a {
@@ -237,7 +229,6 @@ header ul {
     color: #2f2f2f;
     font-size: 175%;
     letter-spacing: 85px;
- /*   letter-spacing: 130px; */
 }
 
 #social-links li {
@@ -428,7 +419,7 @@ ol > li::marker {
 @media screen and (max-width: 1068px) {
 
     #recipe-links-container {
-        flex-wrap: wrap;
+        flex-wrap: wrap; 
     }
 
 }
@@ -570,7 +561,6 @@ ol > li::marker {
     }
 
     #social-links li {
-        font-size: small;
         overflow: hidden;
     }
 }
@@ -580,6 +570,7 @@ ol > li::marker {
     #social-links li {
         margin: 0 auto;
         align-items: center;
+        font-size: small;
     }
 
     footer {
