@@ -215,17 +215,17 @@ header ul {
   /* footer */
 
   footer {
-    height: 75px;
+  /*  height: 75px; */
     margin: 0 auto;
   }
 
   #social-links {
     text-align: center;
-    margin-left: 105px;
+  /*  margin-left: 105px; */
   }
 
 #social-links a {
-    align-self: center;
+ /*   align-self: center; */
     color: #2f2f2f;
     font-size: 175%;
     letter-spacing: 85px;
@@ -474,6 +474,8 @@ ol > li::marker {
     #recipe-image {
         margin: 0 auto;
         display: block;
+        width: auto;
+        height: auto;
     }
 
     #ingredients {
