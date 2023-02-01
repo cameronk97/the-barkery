@@ -227,12 +227,12 @@ header ul {
     justify-content: space-evenly;
   }
 
-  #footer-links {
+  #social-links {
     text-align: center;
     margin-left: 150px;
   }
 
-#footer-links a {
+#social-links a {
     align-self: center;
     color: #2f2f2f;
     font-size: 175%;
@@ -240,12 +240,12 @@ header ul {
  /*   letter-spacing: 130px; */
 }
 
-.social-links {
+#social-links li {
     display: inline-block;
     padding: 30px;
 }
 
-.social-links i:hover {
+#social-links i:hover {
     color: #a2c4c9;
 }
 
@@ -440,7 +440,7 @@ ol > li::marker {
         justify-content: center;
     }
 
-    .social-links {
+    #social-links li {
         width: 5rem;
         align-self: center;
         margin-left: 3rem;
@@ -454,7 +454,7 @@ ol > li::marker {
         align-content: center;
     }
 
-    #footer-links {
+    #social-links {
         margin-left: 0;
     }
 
@@ -569,7 +569,7 @@ ol > li::marker {
         align-items: center;
     }
 
-    .social-links {
+    #social-links li {
         font-size: small;
         overflow: hidden;
     }
@@ -577,7 +577,7 @@ ol > li::marker {
 
 /* For small to extra small screen sizes from 510px wide and down */
 @media screen and (max-width: 510px) {
-    .social-links {
+    #social-links li {
         margin: 0 auto;
         align-items: center;
     }
@@ -625,4 +625,5 @@ ol > li::marker {
     .logo {
         font-size: xx-large;
     }
+
 }
