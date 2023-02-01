@@ -216,7 +216,6 @@ header ul {
 
 .recipe-images {
     width: 334.45px;
-    width: 334.45px;
 }
 
   /* footer */
@@ -233,14 +232,15 @@ header ul {
     margin-left: 150px;
   }
 
-  #footer-links a {
+#footer-links a {
     align-self: center;
     color: #2f2f2f;
     font-size: 175%;
     letter-spacing: 85px;
-  }
+ /*   letter-spacing: 130px; */
+}
 
- .social-links {
+.social-links {
     display: inline-block;
     padding: 30px;
 }
@@ -334,11 +334,11 @@ header ul {
 }
 
 #recipe-info-text {
-    max-width: 100%;
+    max-width: 60%;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    align-content: baseline;
+    align-items: flex-start;
+    align-content: center;
 }
 
 .recipe-title {
@@ -426,27 +426,203 @@ ol > li::marker {
 
 /* For larger to medium screen sizes from 1068px wide and down */
 @media screen and (max-width: 1068px) {
-    #hero-outer {
-        width: 100%
+
+    #recipe-links-container {
+        flex-wrap: wrap;
     }
 
-     #hero-image {
-        width: 100%;
-        background-size: cover;
-        height: 660px;
-    } */
-
-    #recipe-links-container div:nth-child(3) {
-        display: block;
-    }
 }
 
 /* For medium to smaller screen sizes from 900px wide and down */
 @media screen and (max-width: 900px) {
+    footer {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social-links {
+        width: 5rem;
+        align-self: center;
+        margin-left: 3rem;
+        padding: 30px 0px;
+    }
+
+    footer ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+    }
+
+    #footer-links {
+        margin-left: 0;
+    }
+
+    #recipe-info {
+        flex-direction: column;
+        overflow: visible;
+        align-content: flex-end;
+        display: block;
+        margin: 0 auto;
+        height: auto;
+
+    }
+
+    .recipe {
+        display: block;
+        clear: both;
+    }
+
+    #recipe-info-text {
+        display: block;
+        margin: 30px 0;
+        max-height: 800px;
+        max-width: 800px;
+    }
+
+    #recipe-image {
+        margin: 0 auto;
+        display: block;
+    }
+
+    #ingredients {
+     display: block;
+     clear: both;
+     width: 15rem;
+     margin: 0 auto;
+     padding-top: 10px;
+     text-align: center;
     
+    }
+
+    #ingredients h3, #steps h3 {
+        text-align: center;
+    }
+
+    #steps {
+        display: block;
+        clear: both;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .subscribe-form {
+           margin-top: 85px;
+           margin-left: 45px;
+       }
 }
 
 /* For small screen sizes from 700px wide and down */
 @media screen and (max-width: 700px) {
+    #recipe-links-container {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .cover-text {
+        width: 250px;
+        height: 250px;
+        font-size: 110%;
+        text-align: center;
+        padding: 0;
+    }
+
+    #about-cover-text h2 {
+        margin-top: 2rem;
+    }
+
+    #scroll-cover-text h2 {
+        margin-top: 3rem;
+    }
+
+    header {
+        flex-wrap: wrap;
+        height: 105px;
+        width: 100%;
+        align-content: space-around;
+    }
+
+    #menu {
+        margin-left: 15px;
+    }
+
+    .subscribe-form {
+        margin-top: 65px;
+        margin-left: 35px;
+        max-width: 80%;
+    }
+
+    .subscribe-form h3, h2 {
+        text-align: center;
+    }
+
+     footer {
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        position: relative;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .social-links {
+        font-size: small;
+        overflow: hidden;
+    }
+}
+
+/* For small to extra small screen sizes from 510px wide and down */
+@media screen and (max-width: 510px) {
+    .social-links {
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    footer {
+        margin: 0 0 0 20px;
+        width: auto;
+    }
+
+    .recipe-images {
+        width: 215px;
+        height: 215px;
+    }
+
+    .recipe-links h3 {
+        font-size: smaller;
+    }
+
+    #steps {
+        width: 100%;
+    }
+
+    #menu, .logo i {
+        font-size: smaller;
+    }
+
+    h1 {
+      font-size: 36px;
+    }
+
+    .subscribe-form {
+           margin-top: 50px;
+           margin-left: 10px;
+    }
+
+    .subscribe-button {
+        margin: 0 auto;
+    }
+
+}
+
+/* For extra small screen sizes from 370px wide and down */
+@media screen and (max-width: 370px) {
     
+    .logo {
+        font-size: xx-large;
+    }
 }
