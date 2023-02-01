@@ -593,12 +593,19 @@ ol > li::marker {
         width: 100%;
     }
 
-    #menu, .logo i {
-        font-size: smaller;
+    .logo {
+        font-size: 2rem;
+     /*   flex-shrink: 1; */
+       }
+
+    .logo i {
+    /*    flex-shrink: 2; */
     }
 
-    h1 {
-      font-size: 36px;
+    #menu {
+       /* font-size: smaller; */
+     /*  font-size: 1rem; */
+
     }
 
     .subscribe-form {
@@ -608,15 +615,6 @@ ol > li::marker {
 
     .subscribe-button {
         margin: 0 auto;
-    }
-
-}
-
-/* For extra small screen sizes from 370px wide and down */
-@media screen and (max-width: 370px) {
-    
-    .logo {
-        font-size: xx-large;
     }
 
 }
