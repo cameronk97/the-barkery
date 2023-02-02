@@ -169,7 +169,6 @@ header ul {
 #pupcakes-link {
     display: flex;
     flex-direction: column;
-    margin-right: 20px 0;
     background-color: #3e3e3e;
     padding-bottom: 30px;
     border-radius: 5px;
@@ -179,7 +178,6 @@ header ul {
 #pup-pops-link {
     display: flex;
     flex-direction: column;
-    margin-left: 20px 0;
     background-color: #3e3e3e;
     padding-bottom: 30px;
     border-radius: 5px;
@@ -346,7 +344,6 @@ footer ul {
 }
 
 #recipe-image {
-    max-height: auto;
     max-width: 50%;
 }
 
