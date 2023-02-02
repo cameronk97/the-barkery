@@ -145,7 +145,6 @@ header ul {
     position: absolute;
 }
 
-
 /* recipe links on homepage section */
 /* heading for recipe links section */
 #recipes h2 {
@@ -210,15 +209,26 @@ header ul {
     padding-top: 15px;
 }
 
-/* style recipe name links on hover */
-.recipe-links h3:hover {
-    color: #dff9fd;
-    text-shadow: 0 0 0.6rem #ffffff;
-  }
-
 /* set width for recipe link images */
 .recipe-images {
     width: 334.45px;
+}
+
+/* animate recipe links on hover */
+
+.recipe-links:hover {
+    border: 5px solid #a2c4c9;
+}
+
+/* animate recipe images on hover */
+.recipe-images:hover {
+    filter: grayscale(60%);
+}
+
+/* animate recipe name links on hover */
+.recipe-links h3:hover {
+    color: #dff9fd;
+    text-shadow: 0 0 0.6rem #ffffff;
 }
 
 /* footer */
