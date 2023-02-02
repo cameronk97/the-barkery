@@ -1,5 +1,7 @@
+/* import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500;700&family=Montserrat:wght@300;600&display=swap');
 
+/* reset all default padding/margin/border settings */
 * {
     margin: 0;
     padding: 0;
@@ -24,7 +26,7 @@ h1 {
     color: #2f2f2f;
 }
 
-.logo {
+#logo {
     font-size: 300%;
     margin-left: 15px;
 }
@@ -51,7 +53,7 @@ h1 > i {
     letter-spacing: 2px;
 }
 
-#menu, .logo {
+#menu, #logo {
     height: 100%;
 }
 
@@ -69,6 +71,8 @@ header ul {
     color: inherit;
 }
 
+/* style mouse hover and active menu link */
+
 #menu a:hover {
     border-bottom: 1px solid #2f2f2f;
 }
@@ -77,7 +81,7 @@ header ul {
     border-bottom: 1px solid #2f2f2f;
 }
 
-/* hero image */
+/* hero image section */
 
 #hero-outer {
     height: 600px;
@@ -87,6 +91,30 @@ header ul {
     position: relative;
 }
 
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background: url('../images/hero-image.jpg') no-repeat center center;
+    overflow: hidden;
+
+/* animates zoom effect on loading page */
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+/* animation for hero image */
+
+@keyframes hero-zoom {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+
+/* cover text over hero image */
 .cover-text {
     color: #ffffff;
     background-color: rgba(162, 196, 201, .8);
@@ -117,35 +145,17 @@ header ul {
     position: absolute;
 }
 
-#hero-image {
-    height: 600px;
-    width: 100%;
-    background: url('../images/hero-image.jpg') no-repeat center center;
-    overflow: hidden;
 
-/* animates zoom effect on loading page */
-    animation-name: hero-zoom;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-}
-
-/* animation for hero image */
-
-@keyframes hero-zoom {
-    from{
-        transform: scale(1);
-    }
-    to{
-        transform: scale(1.1);
-    }
-}
-
-/* recipe links on homepage */
-
-#recipes {
+/* recipe links on homepage section */
+/* heading for recipe links section */
+#recipes h2 {
     text-align: center;
+    font-size: 250%;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
+/* recipe links container */
 #recipe-links-container {
     display: flex;
     justify-content: space-evenly;
@@ -155,6 +165,7 @@ header ul {
     margin-bottom: 10px;
 }
 
+/* recipe links */
 #pupcakes-link {
     display: flex;
     flex-direction: column;
@@ -185,14 +196,12 @@ header ul {
     box-shadow: 10px 10px 8px #888888;
 }
 
-#recipes h2 {
+/* recipe name links */
+#recipes {
     text-align: center;
-    font-size: 250%;
-    padding-bottom: 20px;
-    padding-top: 20px;
 }
 
-#recipes a {
+#recipes h3 {
     text-decoration: none;
     color: #ffffff;
     font-family: Montserrat, Arial, sans-serif;
@@ -203,29 +212,29 @@ header ul {
     padding-top: 15px;
 }
 
+/* style recipe name links on hover */
 .recipe-links h3:hover {
     color: #dff9fd;
     text-shadow: 0 0 0.6rem #ffffff;
   }
 
+/* set width for recipe link images */
 .recipe-images {
     width: 334.45px;
 }
 
-  /* footer */
+/* footer */
 
-  footer {
-  /*  height: 75px; */
+footer {
     margin: 0 auto;
   }
 
-  #social-links {
+/* social media links */
+#social-links {
     text-align: center;
-  /*  margin-left: 105px; */
   }
 
 #social-links a {
- /*   align-self: center; */
     color: #2f2f2f;
     font-size: 175%;
     letter-spacing: 85px;
@@ -236,6 +245,7 @@ header ul {
     padding: 30px;
 }
 
+/* style social media links on hover */
 #social-links i:hover {
     color: #a2c4c9;
 }
@@ -243,6 +253,7 @@ header ul {
 /* subscribe to our newsletter form */
 
 #form-section {
+    /* form section background image */
     background: url('/assets/images/newsletter-background.jpg') no-repeat center center;
     width: 100%;
     height: 800px;
@@ -257,6 +268,16 @@ header ul {
     background-color: rgba(162, 196, 201, .8);
 }
 
+/* set margins for form elements */
+#form-section label, .text-input, .subscribe-button {
+    margin: 15px 15px 20px;
+}
+
+#email {
+    margin-bottom: 30px;
+}
+
+/* style heading for form section */
 #form-section h2 {
     font-size: 200%;
     margin: 15px;
@@ -269,6 +290,7 @@ header ul {
     font-size: 120%;
 }
 
+/* style name and email input fields */
 .text-input {
     display: block;
     background: rgba(255, 255, 255, 0.4);
@@ -278,6 +300,7 @@ header ul {
     height: 28px;
 }
 
+/* style submit button */
 .subscribe-button {
     display: block;
     padding: 15px 30px;
@@ -287,14 +310,6 @@ header ul {
     color: #ffffff;
     font-family: Montserrat, sans-serif;
     font-size: 100%;  
-}
-
-#form-section label, .text-input, .subscribe-button {
-    margin: 15px 15px 20px;
-}
-
-#email {
-    margin-bottom: 30px;
 }
 
 .text-input:hover {
@@ -332,12 +347,12 @@ header ul {
     align-content: center;
 }
 
-.recipe-title {
+#recipe-title {
     text-align: center;
     font-size: xx-large;
 }
 
-.recipe-description {
+#recipe-description {
     text-align: center;
     margin: 5%;
 }
@@ -355,13 +370,19 @@ header ul {
 }
 
 #ingredients h3, #steps h3 {
-    color: #a2c4c9;
+    color: #3e3e3e;
     padding: 5%;
     font-size: x-large;
+ /*   text-shadow: 1px 1px 1px #2f2f2f; */
 }
 
 #ingredients h3 {
     margin-bottom: 10px;
+}
+
+h3 i {
+    color: #a2c4c9;
+    text-shadow: 1px 1px 1px #3e3e3e;
 }
 
 #ingredients ul {
@@ -369,7 +390,7 @@ header ul {
 }
 
 hr {
-    border: 1px solid #d1d1d1;
+    border: 1px solid #a2c4c9;
     margin: 10px 0;
 }
 
@@ -403,7 +424,7 @@ hr {
 }
 
 #steps li {
-    border-bottom: 1px solid #d1d1d1;
+    border-bottom: 1px solid #a2c4c9;
     padding-bottom: 8px;
     padding-top: 8px;
     max-width: 650px;
@@ -593,12 +614,12 @@ ol > li::marker {
         width: 100%;
     }
 
-    .logo {
+    #logo {
         font-size: 2rem;
      /*   flex-shrink: 1; */
        }
 
-    .logo i {
+    #logo i {
     /*    flex-shrink: 2; */
     }
 

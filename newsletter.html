@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- metadata -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sign up page to receive our weekly newsletter to your email address">
     <meta name="keywords" content="the barkery, pet recipes, subscribe, newsletter">
-
+    <!-- link to css stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Subscribe to our Newsletter!</title>
+    <!-- link to favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <!-- document title -->
+    <title>Subscribe to our Newsletter!</title>
 </head>
 
 <body>
+    <!-- header -->
     <header>
+        <!-- logo -->
         <a href="index.html">
-            <h1 class="logo">The Barkery <i class="fa-solid fa-bone"></i></h1>
+            <h1 id="logo">The Barkery <i class="fa-solid fa-bone"></i></h1>
         </a>
+        <!-- navigation bar -->
         <nav>
             <ul id="menu">
                 <li>
@@ -33,46 +40,51 @@
     </header>
 
     <!-- subscribe to our newsletter form -->
-
     <section id="form-section">
             <form class="subscribe-form" method="POST" action="https://formdump.codeinstitute.net/">
             <h2>Subscribe to our newsletter</h2>
             <h3>and receive weekly recipes straight to your inbox!</h3>
+            <!-- first name input field -->
             <label for="fname">First Name</label>
             <input id="fname" type="text" name="first_name" class="text-input" required>
+            <!-- last name input field -->
             <label for="lname">Last Name</label>
             <input id="lname" type="text" name="last_name" class="text-input" required>
+            <!-- email input field -->
             <label for="email">Email Address</label>
             <input id="email" type="email" name="email_address" class="text-input" required>
+            <!-- subscribe button -->
             <input type="submit" value="Subscribe" class="subscribe-button">
             </form>
     </section>
 
+    <!-- footer and social media links-->
     <footer>
         <ul id="social-links">
             <li>
                 <a href="https://www.facebook.com/" target="_blank" rel="noopener" 
-                aria-label="Visit our Facebook page (opens in new tab)">
+                aria-label="Visit our Facebook page (opens in a new tab)">
                 <i class="fa-brands fa-facebook"></i></a>
             </li>
             <li>
                 <a href="https://www.twitter.com/" target="_blank" rel="noopener" 
-                aria-label="Visit our Twitter page (opens in new tab)">
+                aria-label="Visit our Twitter page (opens in a new tab)">
                 <i class="fa-brands fa-twitter"></i></a>
             </li>
             <li>
                 <a href="https://www.youtube.com/" target="_blank" rel="noopener"
-                aria-label="Visit our Youtube page (opens in new tab)">
+                aria-label="Visit our Youtube page (opens in a new tab)">
                 <i class=><i class="fa-brands fa-youtube"></i></a>
             </li>
             <li>
                 <a href="https://instagram.com/" target="_blank" rel="noopener" 
-                aria-label="Visit our Instagram page (opens in new tab)">
+                aria-label="Visit our Instagram page (opens in a new tab)">
                 <i class="fa-brands fa-instagram"></i></a>
             </li>
         </ul>
     </footer>
 
+    <!-- font awesome script -->
     <script src="https://kit.fontawesome.com/e822f03aa9.js" crossorigin="anonymous"></script>
 </body>
 </html>
