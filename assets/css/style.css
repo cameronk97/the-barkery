@@ -411,9 +411,11 @@ h3 i {
     list-style-type: none;
 }
 
-hr {
-    border: 1px solid #a2c4c9;
-    margin: 10px 0;
+#ingredients li {
+    border-bottom: 1px solid #a2c4c9;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    max-width: 650px;
 }
 
 /* style recipe steps section */
