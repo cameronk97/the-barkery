@@ -214,14 +214,10 @@ header ul {
     width: 334.45px;
 }
 
-/* animate recipe links on hover */
+/* animate recipe links and images on hover */
 
 .recipe-links:hover {
-    border: 5px solid #a2c4c9;
-}
-
-/* animate recipe images on hover */
-.recipe-images:hover {
+    border: 5px solid #82dce9;
     filter: grayscale(60%);
 }
 
