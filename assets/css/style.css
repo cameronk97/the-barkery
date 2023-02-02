@@ -169,7 +169,7 @@ header ul {
 #pupcakes-link {
     display: flex;
     flex-direction: column;
-    margin-right: 15px;
+    margin-right: 20px 0;
     background-color: #3e3e3e;
     padding-bottom: 30px;
     border-radius: 5px;
@@ -179,7 +179,7 @@ header ul {
 #pup-pops-link {
     display: flex;
     flex-direction: column;
-    margin-left: 15px;
+    margin-left: 20px 0;
     background-color: #3e3e3e;
     padding-bottom: 30px;
     border-radius: 5px;
@@ -189,7 +189,7 @@ header ul {
 #dog-biscuits-link {
     display: flex;
     flex-direction: column;
-    margin: 15px;
+    margin: 20px 0;
     background-color: #3e3e3e;
     padding-bottom: 30px;
     border-radius: 5px;
@@ -226,8 +226,16 @@ header ul {
 /* footer */
 
 footer {
-    margin: 0 auto;
+    margin: 0 0 0 20px;
+    width: auto;
   }
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
 
 /* social media links */
 #social-links {
@@ -311,12 +319,13 @@ footer {
     font-family: Montserrat, sans-serif;
     font-size: 100%;  
 }
-
+ /* style text input fields on hover */
 .text-input:hover {
     border-color: #2f2f2f;
     border-width: 2px;
 }
 
+/* style submit button on hover */
 .subscribe-button:hover {
     color: #2f2f2f;
     background-color: rgba(255, 255, 255, 0.4);
@@ -324,6 +333,8 @@ footer {
     font-weight: bold;
 }
 
+/* style for recipe pages */
+/* recipe title, description and image section */
 #recipe-info {
     display: flex;
     width: 100%;
@@ -357,6 +368,29 @@ footer {
     margin: 5%;
 }
 
+/* position recipe ingredients and steps sections */
+.recipe {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+}
+
+/* style headings for ingredients and steps sections */
+#ingredients h3, #steps h3 {
+    color: #3e3e3e;
+    padding: 5%;
+    font-size: x-large;
+}
+
+h3 i {
+    color: #a2c4c9;
+    text-shadow: 1px 1px 1px #3e3e3e;
+}
+
+
+/* style ingredients list */
 #ingredients {
     display: flex;
     flex-direction: column;
@@ -369,20 +403,8 @@ footer {
     margin: 20px 10px;
 }
 
-#ingredients h3, #steps h3 {
-    color: #3e3e3e;
-    padding: 5%;
-    font-size: x-large;
- /*   text-shadow: 1px 1px 1px #2f2f2f; */
-}
-
 #ingredients h3 {
     margin-bottom: 10px;
-}
-
-h3 i {
-    color: #a2c4c9;
-    text-shadow: 1px 1px 1px #3e3e3e;
 }
 
 #ingredients ul {
@@ -394,6 +416,7 @@ hr {
     margin: 10px 0;
 }
 
+/* style recipe steps section */
 #steps {
     display: flex;
     flex-direction: column;
@@ -404,14 +427,6 @@ hr {
     height: 50%;
     padding: 5px;
     margin: 20px 10px;
-}
-
-.recipe {
-    display: flex;
-    width: 100%;
-    justify-content: flex-start;
-    align-content: center;
-    align-items: center;
 }
 
 #steps ol {
@@ -429,7 +444,7 @@ hr {
     padding-top: 8px;
     max-width: 650px;
 }
-
+/* make list numbering bold */
 ol > li::marker {
     font-weight: bold;
 }
@@ -438,7 +453,8 @@ ol > li::marker {
 
 /* For larger to medium screen sizes from 1068px wide and down */
 @media screen and (max-width: 1068px) {
-
+    
+    /* stack recipe links on homepage */
     #recipe-links-container {
         flex-wrap: wrap; 
     }
@@ -447,11 +463,7 @@ ol > li::marker {
 
 /* For medium to smaller screen sizes from 900px wide and down */
 @media screen and (max-width: 900px) {
-    footer {
-        align-items: center;
-        justify-content: center;
-    }
-
+    /* style social links */
     #social-links li {
         width: 5rem;
         align-self: center;
@@ -460,16 +472,14 @@ ol > li::marker {
     }
 
     footer ul {
-        display: flex;
         justify-content: space-evenly;
-        align-items: center;
-        align-content: center;
     }
 
     #social-links {
         margin-left: 0;
     }
-
+    
+    /* stack content on recipe pages */
     #recipe-info {
         flex-direction: column;
         overflow: visible;
@@ -506,7 +516,6 @@ ol > li::marker {
      margin: 0 auto;
      padding-top: 10px;
      text-align: center;
-    
     }
 
     #ingredients h3, #steps h3 {
@@ -520,22 +529,17 @@ ol > li::marker {
         margin: 0 auto;
     }
 
+    /* reposition subscribe form on newsletter page */
     .subscribe-form {
            margin-top: 85px;
            margin-left: 45px;
-       }
+    }
 }
 
 /* For small screen sizes from 700px wide and down */
 @media screen and (max-width: 700px) {
-    #recipe-links-container {
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        flex-wrap: nowrap;
-    }
 
+    /* decrease size of cover text divs */
     .cover-text {
         width: 250px;
         height: 250px;
@@ -543,7 +547,8 @@ ol > li::marker {
         text-align: center;
         padding: 0;
     }
-
+    
+    /* reposition cover text */
     #about-cover-text h2 {
         margin-top: 2rem;
     }
@@ -551,7 +556,8 @@ ol > li::marker {
     #scroll-cover-text h2 {
         margin-top: 3rem;
     }
-
+    
+    /* stack navigation menu under logo in header */
     header {
         flex-wrap: wrap;
         height: 105px;
@@ -563,6 +569,7 @@ ol > li::marker {
         margin-left: 15px;
     }
 
+    /* reposition and resize subscribe form on newsletter page */
     .subscribe-form {
         margin-top: 65px;
         margin-left: 35px;
@@ -572,17 +579,8 @@ ol > li::marker {
     .subscribe-form h3, h2 {
         text-align: center;
     }
-
-     footer {
-        text-align: center;
-        width: 100%;
-        padding: 0;
-        position: relative;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-    }
-
+    
+    /* fixes gap to the right of screen under 700px screen width */
     #social-links li {
         overflow: hidden;
     }
@@ -590,17 +588,15 @@ ol > li::marker {
 
 /* For small to extra small screen sizes from 510px wide and down */
 @media screen and (max-width: 510px) {
+
+    /* resize and center social links in footer */
     #social-links li {
         margin: 0 auto;
         align-items: center;
         font-size: small;
     }
 
-    footer {
-        margin: 0 0 0 20px;
-        width: auto;
-    }
-
+    /* make recipe image links and headings on homepage smaller */
     .recipe-images {
         width: 215px;
         height: 215px;
@@ -609,21 +605,24 @@ ol > li::marker {
     .recipe-links h3 {
         font-size: smaller;
     }
-
+    
+    /* increase width of recipe steps section */
     #steps {
         width: 100%;
     }
 
+    /* decrease logo size */
     #logo {
         font-size: 2rem;
-     /*   flex-shrink: 1; */
        }
 
+    /* reposition subscribe form */
     .subscribe-form {
-           margin-top: 50px;
-           margin-left: 10px;
+        margin-top: 50px;
+        margin-left: 10px;
     }
-
+    
+    /* center submit button */
     .subscribe-button {
         margin: 0 auto;
     }
