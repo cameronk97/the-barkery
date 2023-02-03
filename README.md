@@ -1,108 +1,241 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# The Barkery
 
-Welcome Cameron,
+[View the live project here.](https://cameronk97.github.io/the-barkery/)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+The Barkery is a fictional website aimed at dog owners who are interested in baking treats for their dogs at home. This site aims to provide healthy recipes that are both easy to make for owners, and nutritious for dogs. The Barkery also offers some information on the nutritional benefits of the ingredients used, with an aim to educate dog owners about which foods are good for their pets.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+![Responsive Mockup](https://res.cloudinary.com/dksu5snru/image/upload/v1675383255/responsive-mockup_gx2ija.png)
 
-## Gitpod Reminders
+## Index – Table of Contents
+* [User Experience (UX)](#user-experience-ux) 
+* [Features](#features)
+* [Design](#design)
+* [Technologies Used](#technologies-used)
+* [Testing](#testing)
+* [Unfixed Bugs](#unfixed-bugs)
+* [Deployment](#deployment)
+* [Credits](#credits)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## User Experience (UX)
 
-`python3 -m http.server`
+### User Goals
 
-A blue button should appear to click: _Make Public_,
+#### As a First Time Visitor:
+* I want to easily understand the purpose of the site.
+* I want to be able to easily and intuitively navigate the site.
+* I want to be able to quickly and easily find recipes.
 
-Another blue button should appear to click: _Open Browser_.
+#### As a Returning Visitor:
+* I want to be easily able to find social media links.
+* I want to be able to view the website on all screen sizes.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+#### As a Frequent User:
+* I want to be able to subscribe to the weekly newsletter.
 
-A blue button should appear to click: _Make Public_,
+### User Fulfilment
 
-Another blue button should appear to click: _Open Browser_.
+* In order to make the purpose of the site immediately clear there is a description of the site at the top of the homepage.
+* To guide users intuitely through the site the navigation menu is clear and easy to understand.
+* To help users quickly find recipes there is a link to the recipes section in the navigation bar.
+* Social media links are clearly laid out in the footer so that they are easy to find.
+* In order for users to be able to view the website on any device, the site is responsive to desktop, laptop, tablet and mobile screen sizes.
+* For frequent users the website has a page to subscribe to the weekly newsletter so that users can receive recipes straight to their email address.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Features 
 
-To log into the Heroku toolbelt CLI:
+### Existing Features
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- __Navigation Bar__
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+  - Featured on all five pages, the responsive navigation bar includes links to the Homepage, Recipes section and Newsletter page and is identical in each page to allow for easy navigation.
+  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
 
-------
+![Nav Bar](https://res.cloudinary.com/dksu5snru/image/upload/v1675391456/navigation-bar_msm1vj.png)
 
-## Release History
+- __The landing page image__
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+  - The landing includes a photograph with text overlay to allow the user to see exactly what the purpose of the site is and how to find the recipes. 
+  - This section introduces the user to the site with an eye catching animation to grab their attention
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![Landing Page](https://res.cloudinary.com/dksu5snru/image/upload/v1675391457/landing-page_fr3v40.png)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- __Recipes Section__
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+  - The recipes section will allow the user to see all of the recipes currently available on the site. 
+  - The recipes section is laid out to be easy to navigate and understand.
+  - The recipe links are responsive when hovered over.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+![Recipes](https://res.cloudinary.com/dksu5snru/image/upload/v1675391909/recipes-section_ftg2cr.png)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- __The Footer__ 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+  - The footer section includes links to the relevant social media sites for The Barkery. The links will open in a new tab to allow easy navigation for the user. 
+  - The footer is valuable to the user as it encourages them to keep connected via social media
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+![Footer](https://res.cloudinary.com/dksu5snru/image/upload/v1675392636/footer_tn0gg3.png)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- Pupcakes Recipe Page
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+  - This page will show the user a recipe for homemade cupcakes for dogs. 
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+![Pupcakes](https://res.cloudinary.com/dksu5snru/image/upload/v1675394156/pupcakes-recipe-page_vz65bq.png)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- Dog Biscuits Recipe Page
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+  - This page will show the user a recipe for homemade dog biscuits. 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+![Dog Biscuits](https://res.cloudinary.com/dksu5snru/image/upload/v1675394156/dog-biscuits-recipe-page_tazfq7.png)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+- Pup Pops Recipe Page
 
-------
+  - This page will show the user a recipe for homemade ice pops for dogs.
+  - All three recipe pages are valuable to the user as they are the main purpose of the website and the users will be able to easily identify the recipe information, ingredients and steps.
 
-## FAQ about the uptime script
+![Pup Pops](https://res.cloudinary.com/dksu5snru/image/upload/v1675394156/pup-pops-recipe-page_aidgrv.png)
 
-**Why have you added this script?**
+- __The Newsletter Page__
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+  - This page will allow the user to subscribe to The Barkery newsletter start receiving weekly recipes to their email address. The user will be asked to submit their full name and email address. 
 
-**How will this affect me?**
+![Newsletter](https://res.cloudinary.com/dksu5snru/image/upload/v1675394885/newsletter-page_mrg8rl.png)
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Features Left to Implement
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+- Instructional videos could be added to the recipe pages for an even clearer guide to making the recipes at home.
+- A page top button could be implemented to make site navigation even better.
+- A favicon could be added to make the site easier to recognise in browser tabs.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## Design
+ ### Colour Scheme
+![colours](https://res.cloudinary.com/dksu5snru/image/upload/v1675396933/Screenshot_1282_llbmaf.png)
+### Typography
+        - The Josefin Slab font is used for the logo with Serif as the fallback font. I think this font has a contemporary look, while being playful enough to suit the theme of the site.
+        -   The Montserrat font is the main font used throughout the body of the website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Montserrat is a clean font used frequently in programming, so it is both attractive and appropriate.
+ ### Imagery
+        -   Imagery is important. The large, background hero image is designed to be striking and catch the user's attention. It also has a modern, calming aesthetic.
 
-**So….?**
+ ### Wireframes
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+ #### Home Page Wireframe:
+![Homepage Wireframe](https://res.cloudinary.com/dksu5snru/image/upload/v1675399032/Screenshot_1283_haurzt.png)
 
-**Can I opt out?**
+ #### Newsletter Page Wireframe:
+![Newsletter Wireframe](https://res.cloudinary.com/dksu5snru/image/upload/v1675399032/Screenshot_1285_knrnwc.png)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+ #### Recipe Page Wireframes:
+![Dog Biscuits Wireframe](https://res.cloudinary.com/dksu5snru/image/upload/v1675399032/Screenshot_1286_woffal.png)
+![Pupcakes Wireframe](https://res.cloudinary.com/dksu5snru/image/upload/v1675399032/Screenshot_1287_mlyfho.png)
+![Pup Pops Wireframe](https://res.cloudinary.com/dksu5snru/image/upload/v1675399032/Screenshot_1288_kpzbpr.png)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+## Technologies Used
 
-**Anything more?**
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5)
+-   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### Frameworks, Libraries & Programs Used
 
----
+1. [Hover.css:](https://ianlunn.github.io/Hover/)
+    - Hover.css was used to make navigation links, social media links and image links responsive when hovered over.
+1. [Google Fonts:](https://fonts.google.com/)
+    - Google fonts were used to import the 'Montserrat' and 'Josefin Slab' fonts into the style.css file which are used on all pages throughout the project.
+1. [Font Awesome:](https://fontawesome.com/)
+    - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
+1. [Git](https://git-scm.com/)
+    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+1. [GitHub:](https://github.com/)
+    - GitHub is used to store the projects code after being pushed from Git.
+1. [Balsamiq:](https://balsamiq.com/)
+    - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
 
-Happy coding!
+## Testing
+
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+
+* [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
+    - result for index.html
+      ![HTML results index](https://res.cloudinary.com/dksu5snru/image/upload/v1675400373/Screenshot_1290_raubpu.png)
+    - result for newsletter.html
+      ![HTML results newsletter](https://res.cloudinary.com/dksu5snru/image/upload/v1675400373/Screenshot_1292_ly8szu.png)
+    - result for dog-biscuits-recipe.html
+      ![HTML results dog biscuits](https://res.cloudinary.com/dksu5snru/image/upload/v1675400373/Screenshot_1293_g9wolv.png)
+    - result for pupcakes-recipe.html
+      ![HTML results pupcakes](https://res.cloudinary.com/dksu5snru/image/upload/v1675400374/Screenshot_1289_raryoc.png)
+    - result for pup-pops-recipe.html
+      ![HTML results pup pops](https://res.cloudinary.com/dksu5snru/image/upload/v1675400373/Screenshot_1291_biknpz.png)
+
+
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
+    - result for style.css
+    ![CSS results](https://res.cloudinary.com/dksu5snru/image/upload/v1675400373/Screenshot_1294_pfbtkb.png)
+
+### Further Testing
+
+- The website was tested on Lighthouse and all pages scored 100 for accessibility.
+This is the score of the index.html page:
+![Lighthouse](https://res.cloudinary.com/dksu5snru/image/upload/v1675400374/Screenshot_1295_ztecti.png)
+
+
+-   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
+-   The website was viewed on a variety of devices such as Desktop, Laptop, Android Tablet & Android Mobile.
+-   A large amount of testing was done to ensure that all pages were linking correctly.
+-   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+
+### Known Bugs
+
+-  No known bugs.
+
+## Deployment
+
+### GitHub Pages
+
+The project was deployed to GitHub Pages using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
+3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+4. Under "Source", click the dropdown called "None" and select "Master Branch".
+5. The page will automatically refresh.
+6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
+
+### How to clone the repository
+
+- Go to the https://github.com/cameronk97/the-barkery repository on GitHub 
+- Click the "Code" button to the right of the screen, click HTTPs and copy the link there
+- Open a GitBash terminal and navigate to the directory where you want to locate the clone
+- On the command line, type "git clone" then paste in the copied url and press the Enter key to begin the clone process
+ 
+## Credits 
+
+### Content 
+- All content was written by the developer.
+
+### Code
+- Code on how to create a greyscale filter effect for the recipe links on the homepage came from information on this page : [CSS filter tutorial](https://www.w3schools.com/cssref/css3_pr_filter.php)
+- Code on how to create a box-shadow, as seen on the recipe links on the homepage came from this page : [CSS filter tutorial](https://www.w3schools.com/cssref/css3_pr_box-shadow.php)
+- Code on how to make list numbering bold for the recipe steps sections came from this page: [CSS filter tutorial](https://stackoverflow.com/questions/21369843/is-there-a-way-to-make-numbers-in-an-ordered-list-bold)
+- The Love Running project inspired my hero image and zoom animation.
+- I also took inspiration from the Love Running project for my navigation bar, social links and newsletter page.
+
+### Media 
+- The icons in the header, footer and cover text over the hero image are from [Font Awesome](https://fontawesome.com/)
+- The fonts used were imported from [Google Fonts](https://fonts.google.com/)
+
+- Images were downloaded from [Unsplash](https://unsplash.com) :
+
+    - <a href="https://unsplash.com/photos/1ShMpfhDrU4" target="_blank" rel="noopener">Pup Pops Recipe Image</a> photo by <a href="https://unsplash.com/@dani_r_photos" target="_blank" rel="noopener">Dani Rendina</a>
+
+    - <a href="https://unsplash.com/photos/w6elADh_jww" target="_blank" rel="noopener">Dog Biscuits Recipe Image</a> photo by <a href="https://unsplash.com/@okeykat" target="_blank" rel="noopener">okeykat</a>
+
+- and [Pexels](https://pexels.com) :
+
+    - <a href="https://www.pexels.com/photo/woman-putting-christmas-cookies-on-a-tray-and-her-dog-watching-her-6606712/">Main (hero/landing) image and background image</a> photo by <a href=https://www.pexels.com/@ekaterina-bolovtsova>Ekaterina Bolovtsova</a>
+
+    - <a href="https://www.pexels.com/photo/weimaraner-dog-sitting-with-tongue-out-5706418/" target="_blank" rel="noopener">Newsletter Page Background Image</a> photo by <a href="https://www.pexels.com/@karolina-grabowska/" target="_blank" rel="noopener">Karolina Grabowska</a>
+
+    - <a href="https://www.pexels.com/photo/a-person-holding-a-cupcake-with-candle-in-front-of-a-miniature-pinscher-4588457/" target="_blank" rel="noopener">Pupcakes recipe image</a> photo by <a href="https://www.pexels.com/@shvetsa/" target="_blank" rel="noopener">Anna Shvets</a> 
+
+
+### Acknowledgments
+
+- Thank you to my mentor Richard Wells who gave me very good advice and support.
