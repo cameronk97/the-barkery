@@ -12,7 +12,7 @@ The Barkery is a fictional website aimed at dog owners who are interested in bak
 * [Design](#design)
 * [Technologies Used](#technologies-used)
 * [Testing](#testing)
-* [Unfixed Bugs](#unfixed-bugs)
+* [Known Bugs](#known-bugs)
 * [Deployment](#deployment)
 * [Credits](#credits)
 
